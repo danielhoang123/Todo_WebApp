@@ -1,0 +1,22 @@
+<!-- Set up a <button id="todo-button">To Do</button> so that when you click the button, the text inside changes
+to "Done" (hint: use .innerText) -->
+
+<html>
+    <head>
+        <title>Exercise 8.1</title>
+    </head>
+
+    <body>
+        <button id="todo-button" onclick="DoneButton()">Press me and it will show "Done"</button>
+
+        <script>
+
+            function DoneButton(){
+                
+                let text = document.getElementById('todo-button');
+                text.innerText = 'Done'
+            }
+                        
+        </script>
+    </body>
+</html>

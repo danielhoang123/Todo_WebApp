@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        
+        <button id="A-Button" onclick="AddApple()">Apple</button>
+        <button id="T-Button" onclick="AddTomato()">Tomato</button>
+        <button id="E-Button" onclick="AddEgg()">Egg</button>
+        <button id="Clear-Button" onclick="ClearCart()">Clear</button>
+        <div id="cart"></div>
+        <script>
+
+            const var1 = document.getElementById('cart');
+
+            function AddApple(){
+                
+                
+                const var2 = document.createElement('div');
+                var2.innerText = "An Apple";
+                var1.appendChild(var2);
+
+            }
+            function AddTomato(){
+                
+                
+                const var3 = document.createElement('div');
+                var3.innerText = "A Tomato";
+                var1.appendChild(var3);
+
+            }
+            function AddEgg(){
+                
+                
+                const var4 = document.createElement('div');
+                var4.innerText = "An Egg";
+                var1.appendChild(var4);
+
+            }
+            function ClearCart(){
+                document.getElementById('cart').innerHTML = ' ';
+            }
+        </script>
+    </body>
+</html>

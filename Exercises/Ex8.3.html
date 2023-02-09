@@ -1,0 +1,26 @@
+<!-- Set up the same counter as above, but with another button "Down", that decreases 
+the count by one. (hint: use count = count - 1;) -->
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <div id="counter">0</div>
+        <button id="button" onclick="AddOne()">Up</button>
+        <button id="button" onclick="SubtractOne()">Down</button>
+        <script>
+            let count = 0;
+            function AddOne(){
+                count += 1;
+                let number = document.getElementById('counter');
+                number.innerText = count;
+            }
+            function SubtractOne(){
+                count -= 1;
+                let number = document.getElementById('counter');
+                number.innerText = count;
+            }
+        </script>
+    </body>
+</html>

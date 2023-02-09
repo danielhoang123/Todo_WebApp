@@ -1,0 +1,27 @@
+<!-- Create a button that takes what's inside the textbox, puts it in a div and adds the div to the page. -->
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <input id='textbox' type="text"></input>
+        <button id='button' onclick="AddDiv()">Make Another Div</button>
+        
+        <script>
+
+            // let text = document.getElementById('textbox');
+            // let DivName = text.value;
+
+            function AddDiv(){
+                let text = document.getElementById('textbox');
+                let DivName = text.value;
+
+                let first = document.createElement('div');
+                first.innerText = DivName;
+                document.body.appendChild(first);
+            }
+
+        </script>
+    </body>
+</html>
